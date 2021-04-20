@@ -1,0 +1,196 @@
+/*Font */
+@font-face {
+  font-family: gotham;
+  src: url("fonts/GothamBold.ttf");
+}
+
+@font-face {
+  font-family: gothamXLight;
+  src: url("fonts/Gotham-XLight.otf");
+}
+
+/*GENERAL ************************/
+body::after {
+  content: "";
+  position: absolute;
+  background-color: #37a580;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: gotham;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #37a580;
+}
+
+p {
+  font-family: gothamXLight;
+}
+
+/*NAVBAR*************************/
+.navbar-brand {
+  font-family: gothamXLight;
+  font-size: 1.1rem;
+}
+
+.navbar-span {
+  font-family: gotham;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.div-navbar-toggler {
+  color: #37a580;
+}
+
+.nav-link {
+  font-family: gotham;
+}
+
+/*PROMO*********************************/
+.promo {
+  background-color: #fff;
+}
+
+.promo h1 {
+  color: #37a580;
+  font-family: gotham;
+  font-size: 2.7rem;
+  line-height: 4rem;
+}
+
+.promo img {
+  max-width: 100%;
+}
+
+/*WE ARE ************************************/
+.we-are-title {
+  font-family: gotham;
+  color: #37a580;
+}
+
+.we-are h1 {
+  font-family: gothamXLight;
+}
+
+.we-are p {
+  font-family: gothamXLight;
+  font-size: 1.5rem;
+  color: #37a580;
+}
+
+.notre-mission .img-container,
+.we-are .img-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.we-are img {
+  position: absolute;
+  width: 140%;
+  left: -3rem;
+}
+
+/* NOTRE MISSION ************************/
+.notre-mission p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.notre-mission img {
+  position: absolute;
+  width: 150%;
+  left: -3rem;
+}
+
+/*NOTRE EQUIPE*************************/
+.notre-equipe p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.notre-equipe .img-container {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.notre-equipe img {
+  width: 100%;
+}
+
+/*CONTACTEZ NOUS ************************/
+.contactez-nous {
+  background-color: black;
+  color: #fff;
+}
+
+.contactez-nous-title {
+  font-family: gotham;
+  font-size: 1.5rem;
+}
+
+.contactez-nous-email {
+  font-family: gothamXLight;
+  font-size: 1rem;
+}
+
+.contactez-nous a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*COPYRIGHT *******************************/
+.copyright {
+  font-family: gothamXLight;
+  color: #37a580;
+}
+
+/*MEDIA QUERY***************/
+@media (min-width: 768px) {
+  /*NOTRE MISSION******************/
+  .notre-mission .img-container {
+    height: 100%;
+  }
+
+  .notre-mission img {
+    width: unset;
+    height: 100%;
+    left: -20rem;
+  }
+}
